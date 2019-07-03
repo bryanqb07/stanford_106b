@@ -1,0 +1,8 @@
+def palindrome? (s)
+    return true if s.length <= 1
+    s[0] == s[-1] && palindrome?(s[1...-1])
+end
+
+puts palindrome?("a")
+puts palindrome?("boy")
+puts palindrome?("bob")
